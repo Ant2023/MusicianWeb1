@@ -1,0 +1,139 @@
+<section class="about-section">
+            <div class="container">
+                <div class="about-image">
+                    <img src="images/IMG_0669.jpg" alt="">
+                </div>
+                <div class="about-textbox">
+                    <h1>About Me</h1>
+                    <p>My name is Harold Ayodeji, born and bred in the vibrant heart of Lagos, Nigeria, my musical journey is a tale as rich as the rhythms of Africa itself. I go by my stage name "ZaNurty", which I recently changed from Kid Nurty. Music flows through my veins; it's the legacy of my ancestors, echoing their dedication and the evolution they pioneered in African music. My passion has led me from the streets of Lagos to the scenic landscapes of Denver, Colorado, fusing the heartbeat of Nigeria with the diverse sounds of the Mile-High City. Over the years, I've had the honor of sharing stages with giants of the industry, opening for celebrated international artists like Ghana's iconic rapper, Sarkodie, and the mesmerizing Nigerian Afrobeat sensation, Adekunle Gold, among others. Every note I play, every song I sing, is a tribute to my roots, a nod to the past, and a bridge to global audiences.</p>
+                    <br>
+                    <div class="about-icons">
+                    <a href="https://www.facebook.com/Kidnurty/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/kidnurtymusic/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCkb1DC5a4wbHJT-y_-Atvdg"><i class="fab fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/artist/ARTIST_ID" target="_blank" title="Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section class="about-section reversed-section">
+            <div class="container">
+                <div class="about-textbox" id="second-about-textbox">
+                    <h1>Explore My Music</h1>
+                    <p>As I ride the rhythm from Lagos to Denver, my music becomes a canvas painted with the vibrant colors of two worlds. Rooted in the heartbeat of Nigeria, my melodies dance with the eclectic tunes echoing through the Mile-High City.
+                    Join me in this musical kaleidoscope where tradition meets innovation. Each chord tells a story, a bridge connecting the rich history of Africa to the modern beats of the global stage. It's not just music; it's a cultural conversation, a journey of discovery.
+                    Ready to experience the fusion? Click below to immerse yourself in the sounds that echo from Lagos to Colorado. Let the music speak, and let's embark on this sonic adventure together.</p><br><a href="Music.html">Click to Listen to My Music</a>
+                </div>
+                <div class="about-image" id="second-about-image">
+                    <img src="images/125A0417.jpeg" alt="Nurty's image">
+                </div>
+            </div>
+        </section>
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.about-section {
+  padding: 50px 0;
+  background-color: #000;
+  display: flex; /* Use flexbox for the about section */
+  justify-content: space-between;
+}
+
+
+.about-image {
+  width: 40%;
+}
+
+.about-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-textbox {
+  line-height: 1.6;
+  color: #fff;
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-textbox h1 {
+  font-family: 'Futura';
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-textbox p {
+  font-family: 'Futura';
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-textbox a {
+  color: chocolate;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.about-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icons i {
+  margin: 8px;
+  display: inline-block;
+  font-size: 22px;
+  padding: 2%;
+  cursor: pointer;
+  transition: 0s;
+  background-color: #fff;
+  border-radius: 50%;
+  background-color: #252525;
+}
+
+.about i:hover {
+  background-color: #fff; /* Example color */
+  cursor: pointer; /* Changes the cursor to indicate a clickable item */
+}
+
+.about-textbox a:hover {
+  color: #FFF5E1;
+}
+
+.about-footer footer {
+background-color: #150c0c;}
+@media (max-width: 768px) {
+  .about-image,
+  .about-textbox {
+    width: 100%;
+    float: none;
+  }
+}
+.about-section.reversed {
+  background-color:#000;
+}
+
+.about-section.reversed .about-image {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .about-image,
+  .about-textbox {
+    width: 100%;
+    float: none;
+  }
+}

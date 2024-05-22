@@ -1,0 +1,16 @@
+<!--Footer Nav links-->
+<div class="col-1">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="Music.html">Music</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="container-about">
+      <div class="about-image">
+        <img src="images/kidnurty.jpg" alt="image of Kid Nurty">
+      </div>

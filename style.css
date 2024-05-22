@@ -1,0 +1,1378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    width: 100%; 
+}
+
+/*Header begins here*/
+nav {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: 'Futura';
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+  background: rgb(70, 68, 68);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook-f:hover {
+  color: #4267B2;
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-spotify:hover {
+  color:#1DB954;
+}
+.fa-youtube:hover {
+  color: #FF0000;
+}
+.logo img {
+  width: 15%;
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.container1 {
+  background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.container1::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient( bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;  /* Layer the gradient above the video but below the text */
+}
+.container1 video {
+    max-width: 100%;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: -30px center;
+    z-index: 0;  /* Ensure the video is below the gradient overlay */
+}
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* changed to column to stack h1 and h3 */
+    align-items: center;
+    justify-content:center;
+    font-size: 90px;
+    font-weight: 900;  
+    mix-blend-mode:multiply;
+    z-index: 2;  /* Ensure the text is above the gradient overlay */
+}
+
+.text-box a {
+    font-size: 18px;
+    font-weight:550;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+.text-box a:hover{
+    background-color: #0cf0f0;
+}
+
+.text-box a span{
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.container1 p {
+    display: inline-block;
+    width: 18%;
+    padding: 10px 20px;
+    font-family: 'Poppins';
+    font-size: 1vw;
+    line-height: 1.9;
+    font-weight: 600;
+    text-align: center;
+    color: #061243;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* Section 2 Home Page */ 
+.home-image {
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+}
+.home-image img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+/*section 3 of the Home page*/
+.sample-music{
+  background-image: url(images/Samplemusic.jpg);
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.sample-textbox{
+  box-sizing: border-box;
+  width: 30%;
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+}
+.sample-textbox a{
+  border: 2px solid #fff;
+  text-decoration: none;
+  background: #683333;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 100px;
+}
+.sample-music a:hover{
+  background-color: rgb(95, 0, 0);
+}
+
+.sample-music h1{
+  font-family: 'Raygun';
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+/*first Iframe*/
+.music1{
+  width: 35%;
+  margin-right: 10px;
+}
+.music2{
+  width: 35%;
+}
+@media (max-width: 826px) {
+  .main-image {
+    background-position: center; /* Adjust background position for smaller screens */
+  }
+
+  .main-text2 h1{
+    font-size: 1rem;
+    font-weight: 800;
+}
+}
+
+@media (max-width: 879px){
+  .sample-textbox a{
+    padding: 5px 50px;
+  }
+  .sample-music p{
+    font-size: 15px;
+  }
+  .sample-music h1{
+    font-size: 28px;
+  }
+  .sample-music h4{
+    font-size: 17px;
+  }
+  .text-box{
+    font-size: 70px;
+  }
+}
+@media (max-width: 870px) {
+  .sample-textbox{
+    width: 25%;
+  }
+  .sample-music{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-home a{
+    font-size: 1em;
+    font-weight: 500;
+    padding: 3px 5px;
+  }
+  .home-logo{
+    position: absolute;
+    width: 55px;
+    height: 60px;
+  }
+  .text-box {
+    font-size: 50px;
+}
+.container1 {
+  height: 500px;
+}
+.container1 video {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  object-position: -100px center;
+  z-index: 0;  /* Ensure the video is below the gradient overlay */
+}
+  .text-box a {
+    font-size: 15px;
+    font-weight: 580;
+    padding: 8px 10px;
+    
+}
+  .sample-music{
+    height: auto;
+    display:block;
+    text-align: center;
+}
+  .sample-textbox{
+    height: 120px;
+    width: 100%;
+  }
+  .sample-music h4{
+    font-size: 18px;
+    font-weight: 500;
+
+  }
+  .sample-music h1{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: 800;
+  }
+  .sample-music p{
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  /*first Iframe*/
+  .music1{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .music2{
+    width: 100%;
+  }
+}
+@media (max-width: 706px) {
+  .col-2 p{
+    font-size: 0.9rem;
+  }
+  .col-2, .col-3{
+    display: block;
+  }
+  
+}
+@media (max-width: 500px) {
+  .text-box{
+    font-size: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .text-box{
+    font-size: 28px;
+  }
+ 
+}
+
+footer {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/pexels-jack-gittoes-761543.jpg);
+    width: 100%;
+    height: auto;
+    padding: 2% 0; 
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0)
+    ; 
+    text-align: center;
+    color: #efefef; 
+    position: relative;
+}
+
+
+ .fa-facebook-f {
+  color: #4267B2;
+ }
+ .fa-instagram {
+  color: #E1306C;
+ }
+ .fa-youtube {
+  color: #FF0000;
+ }
+ .fa-spotify {
+  color: #1DB954;
+ } 
+ .fa-soundcloud {
+  color: #F26F23;
+ }
+ 
+form input {
+    width: 40%;
+    height: 45px;
+    border-radius:4px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-right: 18px;
+    outline: none;
+    border: none;
+}
+form button {
+    border: 2px solid #fff;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    
+}
+form button:hover {
+  background-color: #555; /* Example color */
+  color: #fff;
+  cursor: pointer; /* Changes the cursor to indicate a clickable item */
+}
+
+.col-1 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items vertically */
+  margin: 5%;
+}
+
+/* Style for the navigation menu inside col-1 */
+.col-1 li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col-1 a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: #fff;
+}
+
+.col-1  a:hover {
+  color: #fff;
+}
+.col-2 {
+  display: flex ;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+ 
+}
+
+.col-2 h1{
+  font-family: 'Futura';
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.col-2 p{
+  font-family: 'Futura';
+  margin-bottom: 20px;
+}
+
+.social-icons{
+  margin-top: 4%;
+}
+.social-icons i {
+    display: inline-block;
+    font-size: 22px;
+    margin: 3px;
+    padding: 1.5%;
+    cursor: pointer;
+    transition: 0s;
+    background-color: #fff;
+    
+    border-radius: 50%;
+    
+}
+.social-icons i:hover {
+  background-color: #fff; cursor: pointer; /* Changes the cursor to indicate a clickable item */
+}
+.copyrights{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 12px;
+}
+/* Footer Responsive Design*/
+@media (max-width: 768px){
+  footer {
+    width: 100%;
+    height: auto;
+}
+.col-2{
+  margin-top: 40px;
+}
+.copyrights{
+  margin-top: 40px;
+}
+
+form input {
+  width: 350px;
+  margin-top: 20PX;
+  margin-bottom: 25px;
+}
+}
+@media (max-width: 820px){
+  footer{
+    height: auto;
+  }
+ 
+.col-2{
+  margin-top: 40px;
+}
+.copyrights{
+  margin-top: 40px;
+}
+
+form input {
+  width: 300px;
+  margin-top: 15PX;
+  margin-bottom: 25px;
+}
+}
+/*About Section*/
+
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(95, 0, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+.abt-nav {
+  background-color: #211010;
+}
+.abt-container {
+  background-color: #d6cfcf;
+  display: flex; /* Enables Flexbox */
+  align-items: flex-start; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Spacing between image and text box */
+}
+
+.image-box {
+  margin: 20px;
+  padding: 10px;
+  flex: 1; /* Flex grow factor for image box */
+  max-width: 50%; /* Maximum width of the image box */
+}
+
+.image-box img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.abt-textbox {
+  margin-top: 70px;
+  padding: 10px;
+  flex: 2; /* Flex grow factor for text box */
+  max-width: 50%; /* Maximum width of the text box */
+  
+}
+
+.abt-textbox h1 {
+  font-family: 'Futura';
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.abt-textbox p {
+  font-family: 'Futura';
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.abt-textbox a {
+  font-family: "Futura";
+  color: chocolate;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.abt-textbox a:hover {
+  color: #f9b521;
+}
+.about-footer footer {
+  background-color: #150c0c;}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .abt-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  .image-box, .abt-textbox {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+  .abt-textbox {
+    margin: 20px;
+    margin-top: 0;
+  }
+  .abt-textbox h1 {
+    text-align: center;
+  }
+  .abt-textbox p {
+    text-align:justify;
+  }
+}
+
+/*This is the music page setion*/
+.container-image img {
+  position:relative;
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+  display: flex;
+}
+.textbox-music h1{
+  font-family: 'Futura';
+  font-size: 30px;
+  font-weight: 800;
+}
+.textbox-music {
+  position: absolute;  /* This will position the text box relative to the closest positioned ancestor (container-image) */
+  top: 50%;  /* This will push the box 50% down the container. However, it will be top-aligned with the center, so we need to pull it back up by half its own height */
+  left: 10%;  /* Similarly, this will push the box 50% to the right */
+  transform: translate(-50%, -50%); 
+  text-align: center;  
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.1);  
+  padding: 10px;  
+  border-radius: 8px;  
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: 'Raygun';
+  font-size: 30px;
+  font-weight: 900;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #b30000;
+}
+
+.music-link {
+  color: white;
+}
+.music-icons a {
+  display: block;
+  margin-right: 10px; 
+  margin-top: 10px;
+  color: #fff;
+  font-size: 24px; 
+  transition: color 0.3s ease; 
+}
+.music-icons a:hover {
+  color: #1DB954; 
+}
+/* Music first section ends here */
+
+/* Spotify sec. starts here */
+.spotify-header{
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0;
+}
+.spotify-header h1 {
+  font-family: 'Raygan';
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+.spotify-album{
+  width: 100%;
+  height: 100%;
+  background-image: url(images/pexels-elti-meshau-333850.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.music-image2 img {
+    position:relative;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+  }
+  .music-image2 {
+    position:relative;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+  }
+
+@media (max-width: 800px) {
+.spotify-album{
+  height: auto;
+  display:block;
+  text-align: center;
+}
+.spotify-album iframe{
+  width: 100%;
+  margin-bottom: 5%;
+}
+.spotify-header h1 {
+  font-size: 23px; 
+}
+
+}
+
+@media (max-width: 820px) {
+
+.textbox-music {
+  top: 40%;  /* This will push the box 50% down the container. However, it will be top-aligned with the center, so we need to pull it back up by half its own height */
+  left: 16%;  /* Similarly, this will push the box 50% to the right */ 
+}
+
+}
+@media (max-width: 634px) {
+  .textbox-music {
+    top: 50%;  /* This will push the box 50% down the container. However, it will be top-aligned with the center, so we need to pull it back up by half its own height */
+    left: 20%;  /* Similarly, this will push the box 50% to the right */
+    width: 140px;
+  }
+  .music-icons a {
+    display: block;
+    
+  }
+  .spotify-album{
+    height: auto;
+    display:block;
+    text-align: center;
+  }
+  .spotify-album iframe{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .spotify-header h1 {
+    font-size: 20px; 
+  }
+  .button-link {
+    display: inline-block;
+    padding: 10px 13px;
+    font-size: 26px;
+  }
+  }
+
+  @media (max-width: 500px) {
+    .textbox-music {
+      top: 80%;  /* This will push the box 50% down the container. However, it will be top-aligned with the center, so we need to pull it back up by half its own height */
+      left: 85%;
+      width: 140px;
+    }
+    .button-link {
+      display: inline-block;
+      padding: 10px 13px;
+      font-size: 20px;
+    }
+    .spotify-album iframe{
+      width: 100%;
+      margin: 2%;
+    }
+    .spotify-header h1 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 400px) {
+    .spotify-header h1{
+      font-size: 15px;
+    }
+    .textbox-music {
+      top: 68%;  /* This will push the box 50% down the container. However, it will be top-aligned with the center, so we need to pull it back up by half its own height */
+      left: 85%;
+      width: 140px;
+    }  
+    }
+
+/*This is where music page setion ends*/
+
+.contact-page{
+  background-color: #333333;
+}
+.contact-image img{
+  width: 100%;
+  height: auto;
+}
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: #333333;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Futura';
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  width: 320px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  background-color:rgb(95, 0, 0);
+  margin-top: 15px;
+  height: 34px;
+  width: 320px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 270px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: rgb(95, 0, 0); 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 720px) {
+  .direct-contact-container {
+    margin-top: 30px;
+}
+}
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 20px;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .send-button {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .direct-contact-container {
+    margin-top: 60px;
+    margin-left: 60px;
+    max-width: 280px;
+    width: 280px;
+
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 1.5rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+
+/* This will ensure the entire bio section is relative to the window */
+#bio {
+  background-image: url(images/);
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-header {
+  position: relative;
+}
+
+/* This will position your h1 title over the image */
+.bio-header h1 {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Choose a color that makes the text stand out over your image */
+  font-family: 'Futura';
+  font-size: 3rem; /* Example font size, adjust as needed */
+  z-index: 2; /* Ensures the text is above the image */
+  /* Additional styling to ensure visibility over the image */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* This will make the image sticky at the top */
+.header-image {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Adjust this value as needed */
+  z-index: 1; /* Lower than the title z-index to stay behind */
+  width: 100%;
+  height: auto; /* To maintain aspect ratio */
+}
+
+/* Add styles for .bio-content and other elements as needed */
+.site-header {
+  background-color: #683333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-epk {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-media-icons a {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.contact-info p {
+  text-align: right;
+  margin: 0;
+  font-size: 0.9rem; /* Adjust the size as needed */
+}
+
+/* Add responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .header-actions {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+}
+
+/* Remember to add the appropriate classes for the social media icons */
+/* Example for Font Awesome icons */
+.fab {
+  font-family: "Font Awesome 5 Brands"; /* Use the correct font family if you're using Font Awesome */
+}
+
+
+#bio img {
+  width: 100%;
+  height: auto;
+}
+.bio-content {
+  text-align: center;
+  max-width: 800px; /* or whatever maximum width you prefer */
+  margin: 0 auto; /* centers the content block */
+  padding: 2rem; /* add some padding around the text */
+}
+.bio-content h1 {
+  font-size: 3rem;
+}
+.bio-content h1, p{
+  font-family: 'Futura';
+
+}
+blockquote {
+  font-style: italic;
+  line-height: 1.6;
+  margin: 2rem 0; /* add space before and after the quote */
+  padding: 1.2rem; /* add padding inside the blockquote */
+  border-left: 3px solid #ccc; /* optional style for blockquote */
+  background-color: #f9f9f9; /* optional background color for blockquote */
+}
+
+/* ... rest of the CSS */
+
+
+.epk-section {
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+.epk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.epk-image2 {
+  width: 40%;
+  float: left;
+}
+.epk-image2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.epk-textbox {
+  margin-right: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  width: 50%;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.epk-textbox h1{
+  font-family: 'Futura';
+  font-size: 2rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Presskit Section*/
+
+#press-kit-images {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center; /* Center the content */
+}
+.press-photos-title {
+  font-family: 'Futura';
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.images-container {
+  display: flex;
+  justify-content: space-around; /* Evenly distribute the space around the images */
+  align-items: flex-start; /* Align images to the top */
+  gap: 10px; /* Space between the images */
+}
+
+.images-container .image-link {
+  display: block;
+  background-color: #fff; /* Optional: for supporting non-transparent images */
+  padding: 10px; /* Optional: for some space around the image */
+  border-radius: 10px; /* Optional: if you want rounded corners around the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
+  width: 33.333%; /* Adjust width based on the gap and padding */
+  box-sizing: border-box;
+}
+
+.images-container img {
+  height: 450px; /* Set a fixed height for all images */
+  width: 100%; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+   /* Ensure the image covers the area, might crop */
+}
+
+/*Music Section*/
+header h1{
+  text-align: center;
+  font-family: 'Futura';
+  font-size: 3rem;
+}
+header {
+  margin: 50px;
+}
+#music-section {
+  background-color: #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#music-section h2 {
+  font-family: 'Futura';
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.right-column, .upcoming-releases h2{
+  text-align: center;
+
+}
+.left-column, .right-column {
+  flex-basis: 48%; /* Adjust the width of columns */
+}
+
+.latest-releases, .upcoming-releases {
+  margin-bottom: 20px;
+}
+
+.song iframe {
+  width: 80%;
+  height: 150px; /* Adjust height as necessary */
+  border: none;
+  margin-top: 5px;
+}
+
+ 
+.right-column iframe{
+  height: 450px;
+}
+.upcoming-releases ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming-releases li {
+  font-family: 'Futura';
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #music-section {
+      flex-direction: column;
+  }
+
+  .left-column, .right-column {
+      flex-basis: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack the sections on top of each other */
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Space between stacked sections */
+}
+}
+
+.site-footer {
+  background-color: #211010; /* Dark background for the footer */
+  color: #fff; /* Light text color */
+  padding: 20px 0; /* Padding on top and bottom */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Evenly space the content */
+  align-items: center;
+  max-width: 1200px; /* Max width of the footer content */
+  margin: 0 auto; /* Center the footer content */
+}
+
+.footer-section {
+  text-align: center; /* Center the text within each section */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px; /* Space below the section titles */
+}
+
+.footer-section .social-icons a {
+  margin: 0 5px; /* Space between social icons */
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+.footer-section .download-epk a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff; /* Blue background for the download link */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners for the download link */
+  margin-top: 10px; /* Space above the download link */
+}
+
